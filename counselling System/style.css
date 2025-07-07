@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  background-image: url("D:\Project Management\left-bg.jpg .jpg"); /* Adjust path as needed */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: flex-start; /* Align form to left */
+  font-family: 'Times New Roman', Times, serif;
+}
+
+
+body, html {
+  height: 100%;
+  width: 100%;
+}
+
+.background {
+  position: relative;
+  width: 190%;
+  height: 100vh;
+  overflow: hidden;
+  background-position: 300px;
+}
+
+.login-container {
+  display: flex;
+  flex: 2;
+  height: 100%;
+  background-size: contain;
+  position-area: initial;
+}
+
+.left-content {
+  position: relative;
+  flex: 10;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+
+}
+
+.background-image {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  z-index: 5;
+  flex: 2;
+
+}
+
+.overlay-text {
+  position: relative;
+  z-index: 5;
+  color: #e2e2e2;;
+  text-align: center;
+  padding: 20px;
+  max-width: 500px;
+}
+
+.overlay-text .logo {
+  width: 100px;
+  margin-bottom: 10px;
+}
+
+.overlay-text h1 {
+  font-size: 36px;
+  margin: 10px 0;
+}
+
+.overlay-text h2 {
+  font-weight: 800;
+  margin-bottom: 20px;
+  font-size: larger;
+}
+
+.overlay-text p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  
+}
+
+.overlay-text h4 {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 0%;
+}
+
+.right-content {
+  flex: 5;
+  background-color: white;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: row-reverse;
+  margin-right: 0;
+
+
+ 
+}
+
+.form-box {
+  width: 150%;
+  max-width: 350px;
+  padding: 40px;
+  text-align: left;
+  justify-content: flex-start;
+
+}
+
+.form-box h1 {
+  font-size: 58px;
+  color: #094a9c;
+  margin-bottom: 10px;
+}
+.form-box h3{
+  font-size: 16px;
+  color: #527ade;
+  margin-bottom: 30px;
+  font-family: 'Times New Roman';
+}
+
+.form-box p {
+  font-size: 15px;
+  color: #094a9c;
+  margin-bottom: 30px;
+}
+
+form input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 15px;
+  border-radius: 5px;
+  border: 1px solid #094a9c;
+  font-size: 14px;
+}
+
+form .forgot {
+  display: block;
+  text-align: right;
+  font-size: 12px;
+  margin-bottom: 20px;
+  color: #757575;
+  text-decoration: none;
+}
+
+form button {
+  width: 100%;
+  background-color: #3960c4;
+  color: #e2e2e2;
+  padding: 12px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.signup-text {
+  font-size: 13px;
+  margin-top: 20px;
+}
+
+.signup-text a {
+  color: #3960c4;
+  text-decoration: none;
+}

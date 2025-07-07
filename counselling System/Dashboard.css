@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  display: flex;
+  height: 100vh;
+  background-color: #e2e2e2;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 270px;
+  height: 100%;
+  background-color: #c7c4c4;
+  padding: 20px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.sidebar .logo {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.sidebar .logo img {
+  width: 200px;
+  height: 200px;
+}
+
+.sidebar .logo h2 {
+  font-size: 30px;
+  color: #094a9c;
+   margin-top: 30px;
+   margin-bottom:0px;
+   font-family: 'Times New Roman', Times, serif;
+}
+
+.sidebar .subtitle {
+  font-size: 12px;
+  color: #080808;
+  font-size: 12px;
+  margin-bottom: 5px;
+  margin-top: 10px;
+}
+
+.sidebar nav a {
+  display: block;
+  margin: 10px 0;
+  text-decoration: none;
+  color: #000;
+  padding: 10px;
+  border-radius: 8px;
+}
+.nav-links a:hover,
+    .nav-links a.active {
+      background-color: #094a9c;
+      color: #fff;
+      margin-bottom: 2px;
+      margin-top: 2px;
+    }
+  
+
+.sidebar .logout {
+  background-color: #094a9c;
+  color: #e2e2ee;
+  text-align: center;
+  padding: 10px;
+  border-radius: 8px;
+  text-decoration: none;
+  margin-top: 2px;
+}
+
+/* Main content */
+.main {
+  flex-grow: 1;
+  padding: 20px;
+}
+
+.main h1 {
+  color: #094a9c;
+  text-align: center;
+  margin-bottom: 40px;
+  margin-bottom: 40px;
+  font-size: 50px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
+  padding: 0 50px;
+  margin-top: 80px;
+}
+
+.card-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+.card {
+  background-color: #a6deff;
+  padding: 100px;
+  border-radius: 15px;
+  text-align-last: center;
+  box-shadow: 0 2px 5px #000;
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+.card h3 {
+  font-size: 18px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card p {
+  font-size: 14px;
+  color: #000;
+  te
+}
+
+@media (max-width: 768px) {
+  .cards {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    width: 180px;
+    padding: 20px 10px;
+  }
+
+  .main {
+    padding: 30px;
+  }
+}
