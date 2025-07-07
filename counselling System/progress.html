@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>MentorLink - Student Progress</title>
+  <style>
+     body {
+      font-family: Arial, sans-serif;
+      display: flex;
+      margin: 0;
+      height: 100vh;
+    }
+
+    .sidebar {
+       width: 220px;
+      background-color:#c7c4c4;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .logo {
+      width: 200px;
+      height: 200px;
+    }
+
+    .sidebar h2 {
+      color: #1e3d77;
+      margin-top: 10px;
+      margin-bottom: 0%;
+      margin-left: 30px;
+      align-items: center;
+    }
+     .subtitle {
+      font-size: 12px;
+      color: #333;
+      margin-top: 0px;
+      margin-left: 15px;
+      margin-bottom: 20px;
+      align-items: center;
+    }
+    .sidebar nav {
+      margin-top: 30px;
+      width: 100%;
+    }
+
+    .sidebar nav a {
+      display: block;
+      padding: 12px 15px;
+      text-decoration: none;
+      color: #000;
+      margin: 8px 0;
+      border-radius: 8px;
+    }
+
+    .sidebar nav a.active {
+      background-color: #094a9c;
+      color: white;
+      border-radius: 5px;
+    }
+    .menu-item.active {
+      background-color: #094a9c;
+      color: white;
+      border-radius: 5px;
+}
+      
+      .logout {
+      background-color: #094a9c;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      border-radius: 8px;
+      text-decoration: none;
+    }
+   
+    .main-content {
+      flex-grow: 1;
+      padding: 40px;
+      margin-bottom: 20px;
+    }
+    .main-content h2 {
+      color: #1f4e79;
+    }
+    .form-group {
+      margin: 20px 0;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: bold;
+    }
+    input[type="text"],
+    input[type="date"],
+    textarea,
+    select {
+      width: 400px;
+      padding: 10px;
+      font-size: 16px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    textarea {
+      height: 100px;
+      resize: none;
+    }
+    .form-actions {
+      margin-top: 30px;
+    }
+    .form-actions button {
+      background-color:#094a9c;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      font-size: 16px;
+      margin-right: 10px;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="sidebar">
+    <img src="butterfly 1.png" alt="Logo" class="logo" />
+    <h2>MentorLink</h2>
+    <p class="subtitle">University Counselling System</p>
+    <nav id="sidebar-menu">
+  <a href="C:\Users\divan\Desktop\counselling System\Dashboard.html" class="menu-item ">Dashboard</a>
+  <a href="C:\Users\divan\Desktop\counselling System\undergraduater.html" class="menu-item">Profile</a>
+  <a href="C:\Users\divan\Desktop\counselling System\review feedback.html" class="menu-item">Feedback</a>
+  <a href="C:\Users\divan\Desktop\counselling System\Appointment.html" class="menu-item">Appointment</a>
+  <a href="C:\Users\divan\Desktop\counselling System\schedule.html" class="menu-item">Schedule</a>
+  <a href="C:\Users\divan\Desktop\counselling System\progrest.html" class="menu-item active">Progress</a>
+</nav>
+    <a href="C:\Users\divan\Desktop\counselling System\index.html" class="logout">Logout</a>
+  </div>
+
+  <div class="main-content">
+    <h2>Student Progress</h2>
+    <form>
+      <div class="form-group">
+        <label for="university-id">University ID</label>
+        <input type="text" id="university-id" name="university-id" />
+      </div>
+
+      <div class="form-group">
+        <label for="session-date">Last Session Date</label>
+        <input type="date" id="session-date" name="session-date" />
+      </div>
+
+      <div class="form-group">
+        <label for="progress">Progress</label>
+        <textarea id="progress" name="progress" placeholder="Type here..."></textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="action">Action</label>
+        <input type="text" id="action" name="action" />
+      </div>
+
+      <div class="form-group">
+        <label for="reminder">Set Reminder</label>
+        <select id="reminder" name="reminder">
+          <option value="">Select...</option>
+          <option value="1day">1 Day Before</option>
+          <option value="2days">2 Days Before</option>
+          <option value="1week">1 Week Before</option>
+        </select>
+      </div>
+
+      <div class="form-actions">
+        <button type="submit">Save</button>
+        
+      </div>
+    </form>
+  </div>
+
+</body>
+</html>

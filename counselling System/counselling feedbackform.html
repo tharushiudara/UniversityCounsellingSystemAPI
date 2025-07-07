@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>undergraduater Profile</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <style>
+    /* General Reset */
+   
+
+    /* Main Content */
+    body {
+      font-family: 'Inter', sans-serif;
+      background-color: #f9f9f9;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 110%;
+      width: 100%;
+      margin: 0;
+    }
+
+    .feedback-container {
+      display: flex;
+      background: #fff;
+      width: 1265px;
+      border-radius: 12px;
+      box-shadow: 0 10px rgba(0,0,0,0.1);
+      overflow: hidden;
+      align-content: center;
+      justify-content: 20px;
+    }
+
+    .feedback-form {
+      flex: 1;
+      padding: 40px;
+      margin-top: 40px;
+    }
+
+    .feedback-form h1 {
+      color: #094a9c;
+      font-size: 24px;
+      margin-bottom: 10px;
+    }
+
+    .feedback-form h2 {
+      font-size: 20px;
+      margin-bottom: 25px;
+      color: #333;
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+
+    .form-inline {
+      display: flex;
+      gap: 20px;
+    }
+
+    .form-inline input[type="text"],
+    input[type="date"],
+    textarea {
+      flex: 1;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    textarea {
+      width: 100%;
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    .radio-group {
+      margin-top: 10px;
+    }
+
+    .radio-group label {
+      display: block;
+      margin-bottom: 8px;
+    }
+
+    .btn-submit {
+      margin-top: 20px;
+      padding: 10px 25px;
+      background-color: #094a9c;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+    .btn-view-feedback {
+      background-color: #094a9c;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      border-radius: 8px;
+      text-decoration: none;
+      padding: 10px;
+    }
+
+    
+
+  </style>
+</head>
+<body>
+
+ 
+
+    <!-- Main Content -->
+   
+<div class="feedback-container">
+  <div class="feedback-form">
+    <h1>Thank You for your Feedback!</h1>
+    <h2>Counselling Feedback Form</h2>
+
+    <div class="form-group form-inline">
+      <div>
+        <label for="university-id">University ID</label>
+        <input type="text" id="university-id" placeholder="Enter ID"></br>
+      </div>
+      <div>
+        <label for="date">Date</label>
+        <input type="date" id="date">
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label for="feedback">Feedback</label>
+      <textarea id="feedback" placeholder="Type here..."></textarea>
+    </div>
+
+    <div class="form-group">
+      <label>Reflecting on your entire counselling session, how would you rate your experience?</label>
+      <div class="radio-group">
+        <label><input type="radio" name="experience" value="extremely-positive"> Extremely Positive</label>
+        <label><input type="radio" name="experience" value="mostly-positive"> Mostly Positive</label>
+        <label><input type="radio" name="experience" value="neutral"> Neutral</label>
+        <label><input type="radio" name="experience" value="mostly-negative"> Mostly Negative</label>
+        <label><input type="radio" name="experience" value="extremely-negative"> Extremely Negative</label>
+      </div>
+    </div>
+
+    <button class="btn-submit" type="submit">Submit</button></br></br></br></br>
+    
+  </div>
+
+  
+</div>
+
+
+</body>
+</html>

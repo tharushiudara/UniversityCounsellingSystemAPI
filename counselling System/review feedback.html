@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Review Feedback - MentorLink</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+
+    body {
+      background-color: #f9f9f9;
+      color: #333;
+      display: flex;
+      min-height: 100%;
+    }
+
+    .sidebar {
+      width: 260px;
+      height: 100%;
+      background-color:#c7c4c4;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+
+    .logo-section {
+      text-align: center;
+    }
+
+    .logo {
+      width: 200px;
+      height: 200px;
+      object-fit: contain;
+    }
+
+    .logo-section h2 {
+      color: #1e3d77;
+      margin-top: 10px;
+    }
+
+    .subtitle {
+      font-size: 12px;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    nav a {
+      display: block;
+      padding: 12px 15px;
+      text-decoration: none;
+      color: #000;
+      margin: 8px 0;
+      border-radius: 8px;
+    }
+
+    nav a.active,
+    nav a:hover {
+      background-color: #094a9c;
+      color: #fff;
+    }
+
+    
+    .logout {
+      background-color: #094a9c;
+      color: #fff;
+      text-align: center;
+      padding: 10px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 40px;
+      margin-bottom: 35px;
+    }
+
+    .main {
+      flex: 1;
+      padding: 40px;
+      background-color: #ffffff;
+      height: 100px; ;
+    }
+
+    .main h1 {
+      color: #094a9c;
+      font-size: 28px;
+      margin-bottom: 30px;
+    }
+
+    form {
+      max-width: 800px;
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .form-group {
+      margin-bottom: 20px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: 500;
+    }
+
+    .form-group input[type="text"],
+    .form-group textarea {
+      width: 100%;
+      padding: 10px;
+      border-radius: 6px;
+      border: 1px solid #ccc;
+    }
+
+    textarea {
+      resize: vertical;
+      min-height: 80px;
+    }
+
+    .checkbox-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .save-btn {
+      margin-top: 20px;
+      padding: 10px 25px;
+      background-color: #094a9c;
+      color: white;
+      border: none;
+      border-radius: 6px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="logo-section">
+      <img src="butterfly 1.png" alt="MentorLink Logo" class="logo" />
+      <h2>MentorLink</h2>
+      <p class="subtitle">University Counselling System</p>
+    </div>
+    <nav>
+      <a href="C:\Users\divan\Desktop\counselling System\Dashboard.html" class="nav-links">Dashboard</a>
+      <a href="C:\Users\divan\Desktop\counselling System\undergraduater.html" class="nav-links">Profile</a>
+      <a href="C:\Users\divan\Desktop\counselling System\review feedback.html" class="active">Feedback</a>
+      <a href="C:\Users\divan\Desktop\counselling System\Appointment.html" class="nav-links">Appointment</a>
+      <a href="C:\Users\divan\Desktop\counselling System\schedule.html" class="nav-links">Schedule</a>
+      <a href="C:\Users\divan\Desktop\counselling System\progress.html" class="nav-links">Progress</a>
+    </nav>
+    <a href="C:\Users\divan\Desktop\counselling System\index.html" class="logout">Logout</a>
+  </div>
+
+  <!-- Main Content -->
+  <div class="main">
+    <h1>Review Feedback</h1>
+    
+      <div class="form-group">
+        <label for="universityId">University ID</label>
+        <input type="text" id="universityId" name="universityId">
+      </div>
+
+      <div class="form-group">
+        <label for="date">Date</label>
+        <input type="text" id="date" name="date" placeholder="DD/MM/YYYY">
+      </div>
+
+      <div class="form-group">
+        <label for="rating">Rating</label>
+        <input type="text" id="rating" name="rating">
+      </div>
+
+      <div class="form-group">
+        <label for="feedback">Feedback</label>
+        <textarea id="feedback" name="feedback"></textarea>
+      </div>
+
+      <div class="form-group checkbox-group">
+        <input type="checkbox" id="reviewed" name="reviewed">
+        <label for="reviewed">Mark as reviewed</label>
+      </div>
+
+      <div class="form-group">
+        <label for="notes">Notes (optional)</label>
+        <textarea id="notes" name="notes"></textarea>
+      </div>
+
+      <button type="submit" class="save-btn">Save</button>
+    
+  </div>
+
+</body>
+</html>
